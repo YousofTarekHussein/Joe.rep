@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width , intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--allows web authors to choose what version of Internet Explorer the page should be rendered as-->
+    <title>Shopping Cart</title> 
+</head>
+<body>
+<br><br><br><br>
+<button onclick="document.getElementById('emo').innerHTML=Date()">The time is?</button>
+
+<p id="emo"></p>
+
+
+    <br><br><br>
+    <p id="calc" style="background-color: darkmagenta; color: lightyellow;"></p>
+    <p id="operators" style="background-color: cyan;"></p>
+<p id="doc1"></p>
+<p id="doc2"></p>
+<button type="button" onclick="myFunction2()">Click bro </button>
+
+<p id="dem"></p>
+
+<p id="f" style="background-color:moccasin;">My First Paragraph</p>
+<button type="button" onclick="toUpperCase()">Upper Case </button>
+
+<p id="y"></p> 
+<p id="o"></p>
+<p id="u" style="color: brown;"></p>
+<script>
+ 
+ function toUpperCase(){
+   let text= document.getElementById("f").innerHTML;
+   document.getElementById("f").innerHTML=text.toUpperCase();
+  
+ }
+
+const person = {
+    firstName:"Yousof",
+    lastName:"Tarek",
+    fullName: function(){
+        document.getElementById("f").innerHTML=person.fullName();
+    }
+}
+
+
+let o = 2;   // Allowed
+
+{
+  let o = 3;   // Allowed
+  document.getElementById("dem").innerHTML = 
+  typeof "" +"<br>"+
+  typeof(5+3);
+
+}
+
+{
+  let o = 4;   // Allowed
+  
+}
+////////////////////////////////////////////////////////
+let p; 
+p=5;
+document.getElementById("calc").innerHTML=p*10;
+/////////////////////////////////
+document.getElementById("operators").innerHTML=(5+6)*10;
+    
+function myFunction2() {
+    document.getElementById("doc1").innerHTML="Hello IT !";
+    document.getElementById("doc2").innerHTML="From Developers Team 🤍";
+}
+
+
+document.write("<br><br><br>");
+
+ let x,y,z;
+ x = 5;
+ y = 6;
+ z = x+y;
+ document.write("the value of z is  "+z+" .<br> <br>");  
+document.getElementById("o").innerHTML="The value of z ="+z+".<br><br>";
+
+document.getElementById("u").innerHTML="Hellow Every body";
+
+   document.getElementById("y").innerHTML=5+6;
+   document.write(5+5); 
+ 
+   console.log(11 + 16);
+</script>
+<br><br>
+
+<button onclick="window.print()" >print this page</button>
+<br><br>
+
+<button type="button" onclick="document.write(11+4)">Check</button>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>This is the home Page</h1>
+    <p id="demo">JavaScript can change html content</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <br><br>
+  <p id="style">My NAme is yousof "Change Style of HTML"</p>
+  <button type="button" onclick='document.getElementById("style").style.fontSize="40px"'>Style Change</button>
+<br><br>
+<p id="Hide">JavaScript Can Hide HTML Elements</p>
+<button type="button" onclick="document.getElementById('Hide').style.display='none'">Hide Element</button>
+<br><br>
+
+<p id="Show" style="display: none;">JavaScript Can Show HTML Elements</p>
+<button type="button" onclick="document.getElementById('Show').style.display='block'">Show Element</button>
+<br><br>
+<!-- <p id="Script"></p>
+<script>
+    document.getElementById("Script").innerHTML = "My First JavaScript";
+
+    function myFunction(){
+        document.getElementById("Name").innerHTML='My Name is Yousof Tarek Hussein';
+    }
+    </script> -->
+    <p id="Name">My name is Yousof</p>
+    <button type="button" onclick="myFunction()">Placed</button>
+
+    <br><br>
+
+    
+
+    <br><br>
+    <img id="myImage" src="animated-light-bulb-image-0034.gif" style="width:100px">
+    <!--<button onclick="document.getElementById('myImage').src='animated-light-bulboff-image-0034.gif'">Turn off light</button> -->
+
+<br><br><br><br>
+    <img src="animated-thank-you-image-0011.gif" style="width: 150px;">
+
+
+</body>
+</html>
